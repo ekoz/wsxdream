@@ -2,6 +2,6 @@
 rem netstat -an|find "TIME_WAIT"|find "8080" /c
 for /f "delims=" %%a in ('netstat -an^|find "CLOSE_WAIT"^|find "8080" /c') do set str=%%a
 if %str% GEQ 50 (
-	echo µ±Ç° CLOSE_WAIT ÊıÁ¿ %str%, ĞèÒªÖØÆô Jetty ·şÎñ¡£ %date% %time%
+	echo å½“å‰ CLOSE_WAIT æ•°é‡ %str%, éœ€è¦é‡å¯ Jetty æœåŠ¡ã€‚ %date% %time%
 	call jetty-service.bat
 )

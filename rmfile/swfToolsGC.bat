@@ -1,6 +1,6 @@
 @echo off
 :start
-echo É¾³ý1ÌìÇ° SwfTools ÒÅÁôµÄÀ¬»øÎÄ¼þ %date% %time%
+echo åˆ é™¤1å¤©å‰ SwfTools é—ç•™çš„åžƒåœ¾æ–‡ä»¶ %date% %time%
 forfiles /m x56b*-* /d -1 /C "cmd /c del @path"
 ping -n 86400 localhost>NUL
 goto start

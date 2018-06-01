@@ -1,6 +1,6 @@
 @echo off
 :start
-echo É¾³ý1ÌìÇ° OpenOffice ÒÅÁôµÄÀ¬»øÎÄ¼þ %date% %time%
+echo åˆ é™¤1å¤©å‰ OpenOffice é—ç•™çš„åžƒåœ¾æ–‡ä»¶ %date% %time%
 forfiles /m *.afm /d -1 /C "cmd /c del @path"
 forfiles /m *.pfb /d -1 /C "cmd /c del @path"
 ping -n 86400 localhost>NUL
